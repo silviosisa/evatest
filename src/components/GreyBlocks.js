@@ -2,6 +2,8 @@ import React from 'react';
 import {useDispatch} from "react-redux";
 import HomeCarousel from "./HomeCarousel";
 import Face from '../assets/face.png';
+import Poligon from '../assets/poligon.svg';
+import Chevron from '../assets/chevron.svg';
 import {startTest} from "../actions/ui";
 
 const GreyBlocks = () => {
@@ -19,8 +21,22 @@ const GreyBlocks = () => {
                        <img src={Face} alt="" className="img__face"/>
                        <div className="people__name">Clairie Yante-O Mahoney</div>
                    </div>
-                   <div className="button__box" onClick={callAnyPost}>
-                       <div className="btn-item">Hide Sessions</div>
+                   <div className="sucription__box">
+                       <img src={Poligon} alt="" className="img__face"/>
+                       <div className="poligon__data">
+                           <div className="poligon__title">
+                               Active Subscription
+                           </div>
+                           <div className="poligon__detail">
+                               Auto-Renews on <span> 10 July 2021</span>
+                           </div>
+                       </div>
+                   </div>
+                   <div className="btn__item-box">
+                       <div className="btn__item" onClick={callAnyPost}>
+                           <div className="btn__item-text">Hide Sessions</div>
+                           <img className="chevron" src={Chevron} alt="Chevron"/>
+                       </div>
                    </div>
                </div>
                <HomeCarousel></HomeCarousel>

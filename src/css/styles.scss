@@ -10,6 +10,7 @@ $bg-secund: #f2f2f2;
 /* reset */
 html,body,#root{
   height: 100%;
+  font-size: 10px;
 }
 body,p,a,ul,li{
   margin: 0;
@@ -31,5 +32,11 @@ li{
   grid-template-columns: repeat(12, 1fr);
   gap: 10px;
   box-sizing: border-box;
+}
+
+@media screen and (min-width: 1200px){
+  html,body,#root{
+    font-size: 13px;
+  }
 }
 

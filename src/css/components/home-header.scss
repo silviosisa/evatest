@@ -1,6 +1,6 @@
 .home__header{
   height: 100px;
-  padding: 15px;
+  padding: 10px 15px 15px 15px;
   max-width: 1200px;
   margin: 0 auto 10px auto;
   .logo__item{
@@ -12,20 +12,21 @@
     display: none;
   }
   .wallet__header{
-    grid-column: 9/10;
+    grid-column: 9/11;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     img{
-      max-height: 30px;
+      max-height: 2rem;
       width: auto;
       cursor: pointer;
     }
   }
   .icon__user{
     display: none;
-    grid-column: 12/13;
+    grid-column: 13/13;
     img{
-      max-height: 30px;
+      max-height: 2rem;
       width: auto;
       cursor: pointer;
     }
@@ -35,8 +36,7 @@
     display: flex;
     justify-content: center;
     .burger__lines{
-      height: 35px;
-      width:35px;
+      width: 17px;
       display: flex;
       flex-flow: column;
       align-items: center;
@@ -44,9 +44,9 @@
       cursor: pointer;
       .line{
         width: 100%;
-        height: 3px;
+        height: 2px;
         background-color: black;
-        margin-top: 4px;
+        margin-top: 2px;
       }
     }
   }
@@ -54,11 +54,13 @@
     grid-column: 1/13;
     grid-row: 2;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.6em;
+    margin-top: 10px;
     span{
       color: $base-color;
     }
   }
+
   /* small tablet styles */
   @media screen and (min-width: 620px){
     // dont have this views for the header, i jumped to 1200 directly
@@ -74,11 +76,12 @@
       display: none;
     }
     .wallet__header{
-      grid-column: 11/12;
+      grid-column: 12/12;
 
     }
     .icon__user{
-      display: block;
+      display: flex;
+      align-items: center;
     }
     .menu__links{
       grid-column: 3/7;
