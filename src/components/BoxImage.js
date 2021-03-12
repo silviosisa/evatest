@@ -16,7 +16,7 @@ const BoxImage = () => {
 
                 <div className="bottom-box">
                     <div className="title"> HIIT Cardio Workout Warmup</div>
-                    <div className="bottom-title color">
+                    <div className="bottom-title">
                         <div>Monday 11/20 09:00am</div>
                         <div>30 min</div>
                     </div>
