@@ -1,0 +1,96 @@
+.home__header{
+  height: 100px;
+  padding: 15px;
+  max-width: 1200px;
+  margin: 0 auto 10px auto;
+  .logo__item{
+    grid-column: 1/4;
+    display: block;
+    cursor: pointer;
+  }
+  .menu__links{
+    display: none;
+  }
+  .wallet__header{
+    grid-column: 9/10;
+    display: flex;
+    justify-content: flex-end;
+    img{
+      max-height: 30px;
+      width: auto;
+      cursor: pointer;
+    }
+  }
+  .icon__user{
+    display: none;
+    grid-column: 12/13;
+    img{
+      max-height: 30px;
+      width: auto;
+      cursor: pointer;
+    }
+  }
+  .burger__menu{
+    grid-column: 11/13;
+    display: flex;
+    justify-content: center;
+    .burger__lines{
+      height: 35px;
+      width:35px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      .line{
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        margin-top: 4px;
+      }
+    }
+  }
+  .user__welcome{
+    grid-column: 1/13;
+    grid-row: 2;
+    font-weight: bold;
+    font-size: 20px;
+    span{
+      color: $base-color;
+    }
+  }
+  /* small tablet styles */
+  @media screen and (min-width: 620px){
+    // dont have this views for the header, i jumped to 1200 directly
+  }
+  @media screen and (min-width: 960px){
+
+  }
+  @media screen and (min-width: 1200px){
+    .logo__item{
+      grid-column: 1/2;
+    }
+    .burger__menu{
+      display: none;
+    }
+    .wallet__header{
+      grid-column: 11/12;
+
+    }
+    .icon__user{
+      display: block;
+    }
+    .menu__links{
+      grid-column: 3/7;
+      display: flex;
+      text-transform: uppercase;
+      justify-content: space-between;
+      align-items: center;
+      li{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

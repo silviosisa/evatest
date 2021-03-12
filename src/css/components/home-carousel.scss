@@ -1,0 +1,14 @@
+.home__carousel {
+  width: 100%;
+  overflow-x: scroll;
+  box-sizing: border-box;
+  .home__carousel_title{
+    padding: 20px;
+  }
+  .items__box {
+    padding-right: 15px;
+    min-width: 960px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

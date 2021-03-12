@@ -1,0 +1,35 @@
+/* variables */
+$base-color: #4c33c3;
+$bg-secund: #f2f2f2;
+@import "components/home-header";
+@import "components/box-image";
+@import "components/home-carousel";
+@import "components/grey-blocks";
+
+
+/* reset */
+html,body,#root{
+  height: 100%;
+}
+body,p,a,ul,li{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  height: 100%;
+}
+li{
+  list-style-type: none;
+}
+
+.home{
+  height: 100%;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  box-sizing: border-box;
+}
+
