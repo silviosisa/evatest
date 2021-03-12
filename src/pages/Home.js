@@ -8,7 +8,9 @@ const Home = () => {
     return (
         <Provider store={ store }>
             <Header/>
-            <GreyBlocks></GreyBlocks>
+            <GreyBlocks opened={true}></GreyBlocks>
+            <GreyBlocks opened={false}></GreyBlocks>
+            <GreyBlocks opened={false}></GreyBlocks>
         </Provider>
     );
 };

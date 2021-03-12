@@ -6,14 +6,14 @@ import Poligon from '../assets/poligon.svg';
 import Chevron from '../assets/chevron.svg';
 import {startTest} from "../actions/ui";
 
-const GreyBlocks = () => {
+const GreyBlocks = ({opened}) => {
     const dispatch =  useDispatch();
 
     const callAnyPost = () => {
       dispatch(startTest());
     }
 
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(opened);
 
     return (
         <div className="grey__blocks">
