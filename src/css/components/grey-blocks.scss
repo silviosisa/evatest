@@ -82,6 +82,23 @@
     .people__box{
       grid-column: 1/4;
     }
+    .sucription__box{
+      grid-column: 4/10;
+    }
+    .btn__item-box{
+      .btn__item{
+        height: 40px;
+        width: 146px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn__item-text{
+          font-size: 1rem;
+          display: block;
+          margin-right: 4px;
+        }
+      }
+    }
     .button__box{
       display: flex;
       justify-content: flex-end;
