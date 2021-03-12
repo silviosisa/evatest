@@ -1,17 +1,10 @@
 import React,{ useState } from 'react';
-import {useDispatch} from "react-redux";
 import HomeCarousel from "./HomeCarousel";
 import Face from '../assets/face.png';
 import Poligon from '../assets/poligon.svg';
 import Chevron from '../assets/chevron.svg';
-import {startTest} from "../actions/ui";
 
 const GreyBlocks = ({opened}) => {
-    const dispatch =  useDispatch();
-
-    const callAnyPost = () => {
-      dispatch(startTest());
-    }
 
     const [open, setOpen] = useState(opened);
 
@@ -37,7 +30,7 @@ const GreyBlocks = ({opened}) => {
                    <div className="btn__item-box">
                        <div className="btn__item" onClick={ () => { setOpen(!open)}}>
                            <div className="btn__item-text">Hide Sessions</div>
-                           <img className="chevron" src={Chevron} alt="Chevron"/>
+                           <img className={`chevron ${open ? 'arrow_up' : ''}`} src={Chevron} alt="Chevron"/>
                        </div>
                    </div>
                </div>

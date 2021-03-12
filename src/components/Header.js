@@ -1,8 +1,16 @@
 import React from 'react';
+import {useDispatch} from "react-redux";
 import Logo from '../assets/jijo_logo.svg';
 import Wallet from '../assets/wallet.svg';
 import IconUser from '../assets/user.svg';
+import {startTest} from "../actions/ui";
 const Header = () => {
+    const dispatch =  useDispatch();
+    const callAnyPost = () => {
+        dispatch(startTest());
+    }
+
+
     return (
         <div className="home__header grid">
            <div className="logo__item">
@@ -13,7 +21,7 @@ const Header = () => {
                 <li>MY CLASSES</li>
                 <li>MY FAVORITES</li>
             </ul>
-            <div className="wallet__header">
+            <div className="wallet__header" onClick={callAnyPost}>
                 <img src={Wallet} alt=""/>
             </div>
             <div className="icon__user">

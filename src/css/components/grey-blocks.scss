@@ -70,8 +70,13 @@
         background-color: lighten($base-color, 20)
       }
       .chevron{
+        margin-left: 5px;
         width: 10px;
         height: auto;
+        transition: all 0.3s;
+      }
+      .arrow_up{
+        transform: rotate(180deg);
       }
       .btn__item-text{
         display: none;
