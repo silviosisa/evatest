@@ -6,7 +6,7 @@ const HomeCarousel = () => {
     const [items] = useState([1,2,3,4]);
 
     return (
-        <>
+        <div className="animate__animated animate__fadeIn">
             <div className="home__carousel_title">You can book as many group sessions as you want as part of your suscription with Claire</div>
             <div className="home__carousel">
                 <div className="items__box">
@@ -17,7 +17,7 @@ const HomeCarousel = () => {
                     }
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

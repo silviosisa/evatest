@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import {useDispatch} from "react-redux";
 import HomeCarousel from "./HomeCarousel";
 import Face from '../assets/face.png';
@@ -12,6 +12,8 @@ const GreyBlocks = () => {
     const callAnyPost = () => {
       dispatch(startTest());
     }
+
+    const [open, setOpen] = useState(true);
 
     return (
         <div className="grey__blocks">
@@ -33,13 +35,15 @@ const GreyBlocks = () => {
                        </div>
                    </div>
                    <div className="btn__item-box">
-                       <div className="btn__item" onClick={callAnyPost}>
+                       <div className="btn__item" onClick={ () => { setOpen(!open)}}>
                            <div className="btn__item-text">Hide Sessions</div>
                            <img className="chevron" src={Chevron} alt="Chevron"/>
                        </div>
                    </div>
                </div>
-               <HomeCarousel></HomeCarousel>
+               {
+                   open &&  <HomeCarousel></HomeCarousel>
+               }
            </div>
         </div>
     );
