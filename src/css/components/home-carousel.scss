@@ -5,12 +5,18 @@
   width: 100%;
   overflow-x: scroll;
   box-sizing: border-box;
+  padding-bottom: 20px;
 
   .items__box {
     overflow-x: scroll;
     padding-right: 15px;
-    min-width: 960px;
+    min-width: 190vw;
     display: flex;
     justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px){
+    .items__box {
+      min-width: 960px;
+    }
   }
 }

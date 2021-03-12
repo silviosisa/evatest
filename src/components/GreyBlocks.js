@@ -5,9 +5,7 @@ import Face from '../assets/face.png';
 import {startTest} from "../actions/ui";
 
 const GreyBlocks = () => {
-
     const dispatch =  useDispatch();
-
 
     const callAnyPost = () => {
       dispatch(startTest());

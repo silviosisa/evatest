@@ -40,8 +40,6 @@
     }
   }
   .contain{
-    max-width: 1200px;
-    margin: 0 auto;
   }
   @media screen and (min-width: 1200px){
     .people__box{
@@ -51,6 +49,10 @@
       display: flex;
       justify-content: flex-end;
       grid-column: 10/13;
+    }
+    .contain{
+      max-width: 1200px;
+      margin: 0 auto;
     }
   }
 }
